@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-lgtpx-backup() {
 # Copyright (c) 2019 George Vezirtzoglou <gv@oceanic.io>
 
 # Permission is hereby granted, free of charge, to any person
@@ -23,14 +22,16 @@ lgtpx-backup() {
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-if [ $# = 0 ]; then
-    echo "help goes here";
-else
-  if [ ! -d /Applications/LogTen Pro.app ] && [ ! -d $HOME/Applications/LogTen Pro.app ]; then
-    echo "LogTen Pro X must be installed."
-    exit 1
+function backup_logtenprox_logbook(){
+
+  if [ $# = 0 ]; then
+      echo "help goes here";
+  else
+    if [ ! -d /Applications/LogTen Pro.app ] && [ ! -d $HOME/Applications/LogTen Pro.app ]; then
+      echo "LogTen Pro X must be installed."
+      exit 1
+    fi
   fi
-fi
 
   local base_dir=$HOME/Library/Containers/com.coradine.LogTenProX/Data/Documents
   local logtenpro_data_dir="LogTenProData"
@@ -57,3 +58,5 @@ fi
     echo "[LTPX Backup] No database found at $base_dir"
   fi
 }
+
+backup_logtenprox_logbook
