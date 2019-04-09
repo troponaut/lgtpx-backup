@@ -1,6 +1,6 @@
 # LogTex X Pro Backup utility
 
-![GitHub release](https://img.shields.io/github/release/0ceanic/lgtpx-backup.svg) ![GitHub](https://img.shields.io/github/license/0ceanic/lgtpx-backup.svg)
+[![GitHub release](https://img.shields.io/github/release/0ceanic/lgtpx-backup.svg)](https://github.com/0ceanic/lgtpx-backup/releases) ![GitHub](https://img.shields.io/github/license/0ceanic/lgtpx-backup.svg)
 
 A simple command line utility to backup the LogTen Pro X database.
 
