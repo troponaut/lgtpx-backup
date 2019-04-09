@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function lgtpx-backup() {
+lgtpx-backup() {
 # Copyright (c) 2019 George Vezirtzoglou <gv@oceanic.io>
 
 # Permission is hereby granted, free of charge, to any person
