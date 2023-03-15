@@ -10,7 +10,7 @@ A simple command line utility to backup the LogTen Pro X database.
 Easiest way to update is via [Homebrew](https://brew.sh/). After you install Homebrew, run the following command:
 
 ```sh
-$ brew tap 0ceanic/oceanic
+$ brew tap troponaut/oceanic
 ```
 
 You can now install the utility using:.
